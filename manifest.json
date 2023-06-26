@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "CountingBetsBidoo",
+  "description": "Check how many bets a user has done during the auction",
+  "version": "1.0",
+  "content_scripts": [{
+    "matches": ["https://it.bidoo.com/auction.php?*", "https://es.bidoo.com/auction.php?*",
+      "https://en.bidoo.com/auction.php?*"],
+    "js": ["script.js"]
+  }]
+}
